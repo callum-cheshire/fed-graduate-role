@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'fed-graduate-role';
-  message = 'Hello World';
+
+  // readonly ROOT_URL = 'https://pokeapi.co/api/v2/pokemon';
+
+  // constructor(private http: HttpClient) {}
+
+  // pokemonList: any;
+
+  // getAllPokemon() {
+  //   this.pokemonList = this.http.get(`${this.ROOT_URL}/?limit=151`);
+  //   console.log(this.pokemonList.results)
+  // }
 }
