@@ -1,26 +1,21 @@
-.main-container {
-    
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-}
-
 nav {
-    background-color: #363B81;
+    background-image: linear-gradient(#0b1167, #3e4492);
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
 }
 
 .logo {
-    width: 20%;
+    background: none;
+    width: 20rem;
     padding: 10px;
+    padding-right: 20px;
 }
 
-p {
-    font-family: Lato;
-    color:antiquewhite
+.pokeball {
+    background: none;
+    width: 70px;
+    margin: 20px;
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<div *ngIf="pokemon" class="pokemon-details-container">
+    <div class="pokemon-details-card">
+        <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+        <div class="img-container">
+            <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
+        </div>
+      
+        <div class="pokemon-card-details">
+            <div class="pokemon-stats">
+            <h3>Stats:</h3>
+              <p>Height: {{ pokemon.height }}</p>
+              <p>Weight: {{ pokemon.weight }}</p>
+            </div>
+          
+            <div class="pokemon-types">
+              <h3>Types:</h3>
+              <ul>
+                <li *ngFor="let type of pokemon.types">{{ type.type.name }}</li>
+              </ul>
+            </div>
+          
+            <div class="pokemon-abilities">
+              <h3>Abilities:</h3>
+              <ul>
+                <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+  

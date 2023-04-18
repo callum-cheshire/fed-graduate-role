@@ -1,3 +1,23 @@
+@font-face {
+    font-family: Pokemon-Hollow;
+    src: url("../../assets/fonts/Pokemon Hollow.ttf");
+}
+
+@font-face {
+    font-family: Pokemon-Solid;
+    src: url("../../assets/fonts/Pokemon Solid.ttf");
+}
+
+.title {
+    font-size: 3.5rem;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    color: rgb(224, 198, 54);
+    font-weight: 500;
+    font-family: "Pokemon-solid";
+    text-shadow: -3px -3px 0 #1466ad, 3px -3px 0 #1466ad, -3px 3px 0 #1466ad, 3px 3px 0 #1466ad;
+}
+
 .list-container {
     display: flex;
     flex-direction: column;
@@ -8,23 +28,50 @@
 }
 
 .pokemon-grid {
-    margin-top: 40px;
     width: 80%;
     display: grid;
     grid-gap: 16px;
     padding: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(60%, 4fr));
+    grid-template-columns: repeat(auto-fit, minmax(18%, 2fr));
 }
 
-.pokemon-grid .box {
+.pokemon-grid .box  {
     display: flex;
+    background-color: seagreen;
+    border: 2px solid rgb(30, 97, 59);
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3)
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden; 
+}
+
+.pokemon-grid .box:hover {
+    box-shadow: 2px 2px 5px rgba(239, 237, 237, 0.575);
+    background-color: rgb(58, 172, 107);
+}
+
+.pokemon-grid .box:hover * {
+    background-color: rgb(58, 172, 107);
+}
+
+li img {
+    background-color: seagreen;
+}
+
+li p {
+    background-color: seagreen;
+    color: #363B81;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 rgb(255, 255, 255);
 }
 
 pagination-controls {
     text-align: center;
+    color: aliceblue;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }

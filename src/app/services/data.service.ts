@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -16,7 +15,7 @@ export class DataService {
   }
   
 
-  getMoreData(name: string) {
+  getMoreData(name: string | null) {
     return this.http.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
   }
 }
